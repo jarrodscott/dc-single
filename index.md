@@ -1,5 +1,5 @@
 ---
-title: "[Lesson 2: Practical Page](https://github.com/stri-con/dc-single/blob/master/index.Rmd)"
+title: "[Lesson 2: Practical Page](https://github.com/jarrodscott/dc-single/blob/main/index.Rmd)"
 author: "by Jarrod"
 date: "02 June, 2020"
 smart: true
@@ -30,9 +30,9 @@ editor_options:
 
 ## Overview
 
-Welcome to the hands-on, practical learning portion of [Lesson 2](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/) where you will create a single page R Markdown document. I made this page to help guide you in the process. The material below contains a series of assignments and challenges designed to get you comfortable utilizing [YAML metadata](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/#the-yaml-header-1), [Markdown syntax](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/#markdown-formatted-text-1), and [R code chunks](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/#r-code-chunks-1).
+Welcome to the hands-on, practical learning portion of [Lesson 2](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/) where you will create a single page R Markdown document. I made this page to help guide you in the process. The material below contains a series of assignments and challenges designed to get you comfortable utilizing [YAML metadata](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/#the-yaml-header-1), [Markdown syntax](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/#markdown-formatted-text-1), and [R code chunks](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/#r-code-chunks-1).
 
-The page itself is written almost entirely in R Markdown, meaning there is no extensive use of anything fancy like complicated  CSS or HTML. I will introduce some simple HTML code you can use to jazz up your document a little. You should be able to solve any problem I present by digging around in the raw code on GitHub, consulting the [Resources page](https://stri-con.github.io/data-curation/page/resources/), using one of the targeted search strategies described in the [Problem Solving post](https://stri-con.github.io/data-curation/2020/04/03/help/), and/or posting a question to the Slack channel.
+The page itself is written almost entirely in R Markdown, meaning there is no extensive use of anything fancy like complicated  CSS or HTML. I will introduce some simple HTML code you can use to jazz up your document a little. You should be able to solve any problem I present by digging around in the raw code on GitHub, consulting the [Resources page](https://jarrodscott.github.io/data-curation-lockdown/page/resources/), using one of the targeted search strategies described in the [Problem Solving post](https://jarrodscott.github.io/data-curation-lockdown/2020/04/03/help/), and/or posting a question to the Slack channel.
 
 ## Some Keys to Success
 
@@ -65,7 +65,7 @@ Once you have a document built and saved, there should be a `.html` file in your
 
 ### 1.2 Add Markdown Text
 
-Your first task is to add some content and format the content with Markdown. This doesn't need to be anything fancy to start. You can either add text as you go or paste a large amount of text in at once. Dealers choice. You can use the [Markdown](https://stri-con.github.io/data-curation/2020/03/28/lesson-0/#markdown-3) section of Lesson 0 or the [Markdown](https://stri-con.github.io/data-curation/page/resources/#markdown) section from the Resources page for reference.
+Your first task is to add some content and format the content with Markdown. This doesn't need to be anything fancy to start. You can either add text as you go or paste a large amount of text in at once. Dealers choice. You can use the [Markdown](https://jarrodscott.github.io/data-curation-lockdown/2020/03/28/lesson-0/) section of Lesson 0 or the [Markdown](https://jarrodscott.github.io/data-curation-lockdown/page/resources/#markdown) section from the Resources page for reference.
 
 1) Add headers to give the document structure. Use different header levels.
 2) Add hyperlinks. We will learn about *internal* links later. For now, just link to outside websites.
@@ -75,7 +75,7 @@ Your first task is to add some content and format the content with Markdown. Thi
 
 ### 1.3 Modify & Test R Code Chunks
 
-Now it is time to get some practice modifying code chunk options so you can gain more control over the behavior of code and result display. If you have your own R code you are more than welcome to use it here. I will use the default code chunks that were added to the `.Rmd` file. Please see the section on [Chunk structure & options](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/#chunk-structure-options-1) from Lesson 2 for more details.
+Now it is time to get some practice modifying code chunk options so you can gain more control over the behavior of code and result display. If you have your own R code you are more than welcome to use it here. I will use the default code chunks that were added to the `.Rmd` file. Please see the section on [Chunk structure & options](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/#chunk-structure-options-1) from Lesson 2 for more details.
 
 Here are the two default code chunks. As you can see, both have names and the second chunk has a single option.
 
@@ -1170,9 +1170,9 @@ I have mentioned a time or two that the benefits of using R Markdown is the abil
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I discussed this chunk previously in #5 of the [Chunk structure & options](https://stri-con.github.io/data-curation/2020/04/09/lesson-2/#chunk-structure-options-1) section in Lesson 2. Briefly, this is a *global command* that ensures all R code chunks are visible in the final document, unless you escape this behavior by using `echo = FALSE` in a particular chunk. Of course, you could also set the global option to `FALSE` as is `knitr::opts_chunk$set(echo = FALSE)` and then none of the R code would be visible at all. This is a perfectly fine option in some situations but not in others.
+I discussed this chunk previously in #5 of the [Chunk structure & options](https://jarrodscott.github.io/data-curation-lockdown/2020/04/21/lesson-2/#chunk-structure-options-1) section in Lesson 2. Briefly, this is a *global command* that ensures all R code chunks are visible in the final document, unless you escape this behavior by using `echo = FALSE` in a particular chunk. Of course, you could also set the global option to `FALSE` as is `knitr::opts_chunk$set(echo = FALSE)` and then none of the R code would be visible at all. This is a perfectly fine option in some situations but not in others.
 
-Let's face it---code takes up a lot of space in a document and large code chunks are not particularly pleasing to look at. You may encounter situations where you both want the code available on a page *but* you also want to hide the code. For this we use a technique called ***code folding***. Near the bottom of [Lesson 0](https://stri-con.github.io/data-curation/2020/03/28/lesson-0/), I used some simple HTML to make a section that folds the R code for the Clifford Attractor. There is a little `Show/hide` button that allows you to look at the code if you want to; otherwise it is hidden by default. But this approach is a little clunky because you must **a**) know some HTML and **b**) include this for every chunk.
+Let's face it---code takes up a lot of space in a document and large code chunks are not particularly pleasing to look at. You may encounter situations where you both want the code available on a page *but* you also want to hide the code. For this we use a technique called ***code folding***. Near the bottom of [Lesson 0](https://jarrodscott.github.io/data-curation-lockdown/2020/03/28/lesson-0/), I used some simple HTML to make a section that folds the R code for the Clifford Attractor. There is a little `Show/hide` button that allows you to look at the code if you want to; otherwise it is hidden by default. But this approach is a little clunky because you must **a**) know some HTML and **b**) include this for every chunk.
 
 R Markdown has a similar functionality for showing and hiding code but it only takes a single line of code added to the YAML header. Again, return to your YAML header and add the argument  `code_folding:` as a nested property of `html_document:`. Your two options for `code_folding:` are `show` and `hide`.
 
@@ -1753,7 +1753,7 @@ This code controls the plot *style* but not how the plot is rendered in the fina
 * `out.width`, `out.height`: (NULL; character OR numeric) Width and height of the plot in the final output file (can be different with its real `fig.width` and `fig.height`, i.e. plots can be scaled in the output document). For example, as a percent `out.width = '80%` or in pixels `out.width = 600px`. 
 * `fig.cap`: (NULL; character) Figure caption to be used. *Note*, character values must be enclosed in **single quotation** marks like so: `'This is a figure caption'`.
 
-OK, let's use  chunk options to change the size and alignment and add a caption. I will hide the R code since it is the same as above. If you want to see the chunk options you need to look at the raw `.Rmd` file on the [GitHub repo](https://github.com/stri-con/dc-single/blob/master/index.Rmd). 
+OK, let's use  chunk options to change the size and alignment and add a caption. I will hide the R code since it is the same as above. If you want to see the chunk options you need to look at the raw `.Rmd` file on the [GitHub repo](https://github.com/sjarrodscott/dc-single/blob/main/index.Rmd). 
 
 <div class="figure" style="text-align: center">
 <img src="index_files/figure-html/out_2-1.png" alt="This is a figure caption."  />
